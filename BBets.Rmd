@@ -10,22 +10,12 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+require(tidyverse)
+require(tidyverse)
 ```
 ### `r as.character(Sys.Date())`
 
-```{r include=FALSE,echo=FALSE}
-require(tidyverse)
-if(!require("imager")) {install.packages("imager");require("imager")}
 
-```
-
-```{r echo=FALSE,out.width='100%'}
-xx<-getwd()
-Drive_ltr <- strtrim(xx,2)
-yy <- str_glue("{Drive_ltr}\\AAA_Owner_Info\\My_photo.jpg")
-my_pict <- load.image(yy)
-plot(my_pict,axes=FALSE,main="I'm Confused")
-```
 
 <!-- We recommend you use git branches -- create a separate branch for each major section i.e. Introduction, Methods, Results, Inferential Results, and Discussion and Conclusions - leave the YAML block untouched until the final merge where you put in your own name !-->
 
